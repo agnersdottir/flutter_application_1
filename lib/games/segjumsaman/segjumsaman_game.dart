@@ -1,7 +1,5 @@
-import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'package:namer_app/components/set_background.dart';
-import 'package:namer_app/games/memory_game.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:namer_app/games/segjumsaman/categories/segjumsaman_fot_game.dart';
 import './categories/segjumsaman_litir_game.dart';
