@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.7.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="frontpage" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="595.276px" height="841.89px" viewBox="0 0 595.276 841.89" enable-background="new 0 0 595.276 841.89"
+	 xml:space="preserve">
+<g id="grass" opacity="0.8">
+	<rect x="0.097" y="810.545" fill="#BDDEA9" width="595.276" height="31.021"/>
+	<rect x="0.097" y="778.507" fill="#DFEFD6" width="595.276" height="32.038"/>
+	<rect x="0.097" y="754.191" fill="#EEF6EA" width="595.276" height="32.038"/>
+	<rect x="6.497" y="731.508" fill="#DFEFD6" width="7.2" height="79.036"/>
+	<rect x="137.697" y="731.508" fill="#DFEFD6" width="6.4" height="79.036"/>
+	<rect x="498.497" y="665.746" fill="#DFEFD6" width="6.4" height="144.799"/>
+	<rect x="544.897" y="700.082" fill="#DFEFD6" width="8.8" height="110.463"/>
+	<rect x="42.497" y="638.796" fill="#DFEFD6" width="6.4" height="168.951"/>
+	<rect x="90.497" y="665.746" fill="#DFEFD6" width="12.8" height="138.509"/>
+	<rect x="316.897" y="714.049" fill="#DFEFD6" width="12" height="93.697"/>
+	<rect x="420.897" y="715.521" fill="#BDDEA9" width="12.8" height="125.974"/>
+	<rect x="208.897" y="744.312" fill="#BDDEA9" width="12.8" height="84.968"/>
+	<rect x="68.897" y="714.049" fill="#BDDEA9" width="5.995" height="115.23"/>
+	<rect x="20.097" y="687.861" fill="#BDDEA9" width="7.2" height="148.895"/>
+	<rect x="576.897" y="731.508" fill="#BDDEA9" width="8" height="89.623"/>
+	<rect x="349.697" y="631.409" fill="#EDF6E8" width="9.6" height="147.821"/>
+	<rect x="257.697" y="714.049" fill="#EDF6E8" width="7.2" height="64.599"/>
+	<rect x="171.297" y="687.861" fill="#EDF6E8" width="8.139" height="96.295"/>
+	<rect x="563.297" y="628.975" fill="#EDF6E8" width="8.138" height="131.923"/>
+	<rect x="281.697" y="729.444" fill="#EDF6E8" width="5.6" height="36.401"/>
+	<rect x="469.64" y="660.703" fill="#EDF6E8" width="6.743" height="108.409"/>
+	<rect x="234.497" y="638.796" fill="#DFEFD6" width="6.4" height="147.071"/>
+</g>
+<path id="darkbluesky" opacity="0.8" fill="#80D1F5" d="M595.276,53.8H0c0-3.004,0-6.008,0-9.012C0,29.859,0,14.929,0,0
+	c198.425,0,396.851,0,595.276,0V53.8z"/>
+<polygon id="star3" opacity="0.8" fill="#AADDF8" points="34.733,40.142 28.421,38.682 24.298,42.71 22.977,36.653 17.114,33.576 
+	22.609,31.293 23.109,25.363 27.827,30.009 33.998,29.421 31.419,34.576 "/>
+<polygon id="star2" opacity="0.8" fill="#AADDF8" points="437.288,34.271 430.355,36.453 427.475,44.306 424.121,37.341 
+	417.112,37.147 421.972,30.661 420.521,22.687 426.878,25.643 432.99,20.909 432.059,29.222 "/>
+<polygon id="star1" opacity="0.8" fill="#AADDF8" points="546.25,33.349 552.396,36.023 557.623,32.608 557.511,39.127 
+	562.801,43.395 556.585,44.75 554.628,50.803 550.899,45.121 544.399,44.594 548.31,39.727 "/>
+<g id="Skies" opacity="0.8">
+	<path id="mediumbluesky" fill="#AADDF8" d="M595.373,106.722H0.097c0-12.473,0-24.946,0-37.419c0-5.454,0-10.908,0-16.363h595.276
+		V106.722z"/>
+	<polygon id="lightbluesky2" fill="#F4FAFE" points="595.018,106.722 -0.021,106.722 595.018,133.867 	"/>
+	<polygon id="lightbluesky" fill="#F4FAFE" points="591.297,113.312 0.302,104.811 0.025,143.723 	"/>
+</g>
+<ellipse id="Sun" opacity="0.8" fill="#FFEEB7" cx="512.44" cy="197.364" rx="12.212" ry="12.487"/>
+<rect id="sunmark" x="511.067" y="145.547" opacity="0.8" fill="#FFEEB7" width="3.066" height="31.009"/>
+<rect id="sunmark2" x="511.067" y="218.171" opacity="0.8" fill="#FFEEB7" width="3.066" height="31.009"/>
+<rect id="sunmark3" x="546.07" y="181.064" transform="matrix(6.123234e-17 -1 1 6.123234e-17 351.4104 743.8646)" opacity="0.8" fill="#FFEEB7" width="3.135" height="30.326"/>
+<rect id="sunmark4" x="475.676" y="179.497" transform="matrix(6.123234e-17 -1 1 6.123234e-17 282.5834 671.9028)" opacity="0.8" fill="#FFEEB7" width="3.135" height="30.326"/>
+<polygon id="sunmark5" opacity="0.8" fill="#FFEEB7" points="482.896,227.34 480.863,224.994 496.437,210.883 498.47,213.229 "/>
+<polygon id="sunmark6" opacity="0.8" fill="#FFEEB7" points="529.862,184.786 527.829,182.439 543.402,168.328 545.436,170.674 "/>
+<polygon id="sunmark7" opacity="0.8" fill="#FFEEB7" points="480.687,170.96 482.647,168.549 498.646,182.154 496.686,184.564 "/>
+<polygon id="sunmark8" opacity="0.8" fill="#FFEEB7" points="527.854,213.19 529.897,210.853 545.411,225.033 543.368,227.37 "/>
+<polygon id="star4" opacity="0.8" fill="#AADDF8" points="137.6,51.232 131.288,49.772 127.165,53.8 125.844,47.743 119.982,44.666 
+	125.477,42.383 125.977,36.453 130.694,41.099 136.865,40.511 134.286,45.666 "/>
+<polygon id="star5" opacity="0.8" fill="#AADDF8" points="270.009,38.713 263.698,37.253 259.575,41.281 258.253,35.224 
+	252.391,32.147 257.886,29.864 258.386,23.934 263.103,28.58 269.274,27.992 266.695,33.147 "/>
+<polygon id="lightbluecrop" opacity="0.8" fill="#EDF7FD" points="0.119,107.41 595.157,107.41 0.119,80.265 "/>
+</svg>

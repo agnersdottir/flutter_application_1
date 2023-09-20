@@ -1,0 +1,113 @@
+import 'package:english_words/english_words.dart';
+import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+import 'package:video_player/video_player.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return ChangeNotifierProvider(
+      create: (context) => MyAppState(),
+      child: MaterialApp(
+        title: 'Namer App',
+        theme: ThemeData(
+          useMaterial3: true,
+          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepOrange),
+        ),
+        home: MyHomePage(),
+      ),
+    );
+  }
+}
+
+class MyAppState extends ChangeNotifier {
+  var current = WordPair.random();
+}
+
+class MyHomePage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    late VideoPlayerController controller;
+    controller = VideoPlayerController.asset("assets/leikur.mp4");
+    return Scaffold(
+      body: CustomScrollView(
+        primary: false,
+        slivers: <Widget>[
+          SliverPadding(
+            padding: const EdgeInsets.all(20),
+            sliver: SliverGrid.count(
+              crossAxisSpacing: 10,
+              mainAxisSpacing: 10,
+              crossAxisCount: 2,
+              children: <Widget>[
+                Container(),
+                Container(),
+                GestureDetector(
+                  onTap: () {
+                    print("hæ");
+                    /* Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => Game1()),
+                    ); */
+                  },
+                  child: Container(
+                    padding: const EdgeInsets.all(8),
+                    //color: Colors.green[100],
+                    child: SvgPicture.asset(
+                      "assets/spilaleiki.svg",
+                      // height: 400,
+                    ),
+                  ),
+                ),
+                Container(
+                  padding: const EdgeInsets.all(8),
+                  //color: Colors.green[100],
+                  child: SvgPicture.asset(
+                    "assets/talnaleikurlogo.svg",
+                    // height: 400,
+                  ),
+                ),
+                Container(
+                    padding: const EdgeInsets.all(8),
+                    // color: Colors.green[500],
+                    child: VideoPlayer(controller)),
+                Container(
+                  padding: const EdgeInsets.all(8),
+                  //color: Colors.green[600],
+                  //child: const Text('Revolution, they...'),
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class Game1 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Row(children: [
+        ElevatedButton(
+            onPressed: () {
+              Navigator.pop(context);
+            },
+            child: Text("Sune")),
+        Container(
+          padding: const EdgeInsets.all(8),
+          color: Colors.green[100],
+          child: Image.network('https://picsum.photos/250?image=9'),
+        ),
+      ]),
+    );
+  }
+}
