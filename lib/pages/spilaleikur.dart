@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter_svg_provider/flutter_svg_provider.dart';
 import 'package:namer_app/components/set_background.dart';
-import 'package:namer_app/games/memory_game.dart';
+import 'package:namer_app/games/memory/memory_game.dart';
 import 'package:namer_app/games/rutina/rutina_game.dart';
 import 'package:namer_app/games/segjumsaman/segjumsaman_game.dart';
 
@@ -19,6 +19,7 @@ class Spilaleikur extends StatelessWidget {
             child: CustomScrollView(
       primary: false,
       slivers: <Widget>[
+        SliverAppBar(backgroundColor: Colors.transparent),
         SliverPadding(
           padding: const EdgeInsets.all(20),
           sliver: SliverGrid.count(
@@ -26,13 +27,6 @@ class Spilaleikur extends StatelessWidget {
             mainAxisSpacing: 10,
             crossAxisCount: 2,
             children: <Widget>[
-              Row(
-                children: [
-                  Container(
-                      padding: EdgeInsetsDirectional.symmetric(),
-                      child: BackButton())
-                ],
-              ),
               GestureDetector(
                 onTap: () {
                   Navigator.push(
