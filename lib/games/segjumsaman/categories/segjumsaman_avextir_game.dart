@@ -1,9 +1,6 @@
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'package:namer_app/components/set_background.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-
-import '../segjumsaman_game.dart';
 
 class SegjumAvextirGame extends StatefulWidget {
   @override

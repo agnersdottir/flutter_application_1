@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:namer_app/components/set_background.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-
-import '../segjumsaman/categories/segjumsaman_islenskudyrin_game.dart';
-import '../segjumsaman/categories/segjumsaman_litir_game.dart';
-import '../segjumsaman/categories/segjumsaman_utivera_game.dart';
+import 'package:namer_app/games/memory/categories/medium_memory_game.dart';
+import 'categories/easy_memory_game.dart';
+import 'categories/hard_memory_game.dart';
 
 class MemoryGame extends StatelessWidget {
   @override
@@ -14,33 +13,27 @@ class MemoryGame extends StatelessWidget {
             child: CustomScrollView(
       primary: false,
       slivers: <Widget>[
+        SliverAppBar(backgroundColor: Colors.transparent),
         SliverPadding(
-          padding: const EdgeInsets.all(20),
+          padding: const EdgeInsets.fromLTRB(250, 80, 250, 100),
           sliver: SliverGrid.count(
             crossAxisSpacing: 10,
-            mainAxisSpacing: 50,
-            crossAxisCount: 3,
+            mainAxisSpacing: 10,
+            crossAxisCount: 1,
             children: <Widget>[
-              Row(
-                children: [
-                  Container(
-                      padding: EdgeInsetsDirectional.symmetric(),
-                      child: BackButton())
-                ],
-              ),
               GestureDetector(
                 onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => SegjumLitirGame()),
+                    MaterialPageRoute(builder: (context) => MediumMemoryGame()),
                   );
                 },
                 child: Container(
                   padding: const EdgeInsets.all(8),
                   //color: Colors.green[100],
                   child: SvgPicture.asset(
-                    "assets/litirnir.svg",
-                    // height: 400,
+                    "/Users/berglind/development/flutter_application_1/assets/memory/audveltmemory.svg",
+                    height: 40,
                   ),
                 ),
               ),
@@ -48,16 +41,15 @@ class MemoryGame extends StatelessWidget {
                 onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(
-                        builder: (context) => SegjumUtiveraGame()),
+                    MaterialPageRoute(builder: (context) => EasyMemoryGame()),
                   );
                 },
                 child: Container(
                   padding: const EdgeInsets.all(8),
                   //color: Colors.green[100],
                   child: SvgPicture.asset(
-                    "assets/utivera02.svg",
-                    // height: 400,
+                    "/Users/berglind/development/flutter_application_1/assets/memory/midlungsmemory.svg",
+                    height: 40,
                   ),
                 ),
               ),
@@ -65,10 +57,17 @@ class MemoryGame extends StatelessWidget {
                 onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(
-                        builder: (context) => SegjumIslenskuDyrGame()),
+                    MaterialPageRoute(builder: (context) => HardMemoryGame()),
                   );
                 },
+                child: Container(
+                  padding: const EdgeInsets.all(8),
+                  //color: Colors.green[100],
+                  child: SvgPicture.asset(
+                    "/Users/berglind/development/flutter_application_1/assets/memory/erfittmemory.svg",
+                    height: 40,
+                  ),
+                ),
               ),
             ],
           ),

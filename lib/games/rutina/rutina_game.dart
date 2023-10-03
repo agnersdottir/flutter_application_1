@@ -1,8 +1,6 @@
-import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'package:namer_app/components/set_background.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:namer_app/games/segjumsaman/categories/segjumsaman_fot_game.dart';
 
 import '../segjumsaman/categories/segjumsaman_islenskudyrin_game.dart';
 import 'morgunrutina/rutina_morgunrutina_game.dart';
@@ -15,28 +13,14 @@ class RutinaGame extends StatelessWidget {
             child: CustomScrollView(
       primary: false,
       slivers: <Widget>[
+        SliverAppBar(backgroundColor: Colors.transparent),
         SliverPadding(
-          padding: const EdgeInsets.all(0),
+          padding: const EdgeInsets.fromLTRB(200, 100, 200, 100),
           sliver: SliverGrid.count(
-            crossAxisSpacing: 0,
-            mainAxisSpacing: 0,
-            crossAxisCount: 2,
+            crossAxisSpacing: 10,
+            mainAxisSpacing: 10,
+            crossAxisCount: 1,
             children: <Widget>[
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  Container(
-                    padding: EdgeInsetsDirectional.symmetric(),
-                    child: BackButton(),
-                  )
-                ],
-              ),
-              GestureDetector(
-                onTap: () {},
-                child: Container(
-                  padding: const EdgeInsets.all(0),
-                ),
-              ),
               GestureDetector(
                 onTap: () {
                   Navigator.push(
@@ -66,7 +50,7 @@ class RutinaGame extends StatelessWidget {
                   //color: Colors.green[100],
                   child: SvgPicture.asset(
                     "assets/kvoldrutina.svg",
-                    height: 400,
+                    height: 40,
                   ),
                 ),
               ),

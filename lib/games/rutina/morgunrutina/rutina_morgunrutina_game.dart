@@ -15,6 +15,7 @@ class MorgunRutinaGame extends StatelessWidget {
             child: CustomScrollView(
       primary: false,
       slivers: <Widget>[
+        SliverAppBar(backgroundColor: Colors.transparent),
         SliverPadding(
           padding: const EdgeInsets.all(20),
           sliver: SliverGrid.count(
@@ -22,13 +23,6 @@ class MorgunRutinaGame extends StatelessWidget {
             mainAxisSpacing: 50,
             crossAxisCount: 3,
             children: <Widget>[
-              Row(
-                children: [
-                  Container(
-                      padding: EdgeInsetsDirectional.symmetric(),
-                      child: BackButton())
-                ],
-              ),
               GestureDetector(
                 onTap: () {
                   Navigator.push(

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:flutter_svg_provider/flutter_svg_provider.dart';
 import 'package:namer_app/components/set_background.dart';
 import 'package:namer_app/games/memory/memory_game.dart';
 import 'package:namer_app/games/rutina/rutina_game.dart';
@@ -21,7 +20,7 @@ class Spilaleikur extends StatelessWidget {
       slivers: <Widget>[
         SliverAppBar(backgroundColor: Colors.transparent),
         SliverPadding(
-          padding: const EdgeInsets.all(20),
+          padding: const EdgeInsets.fromLTRB(50, 0, 100, 100),
           sliver: SliverGrid.count(
             crossAxisSpacing: 10,
             mainAxisSpacing: 10,
