@@ -36,7 +36,7 @@ class _LitirnirLeikurState extends State<LitirnirLeikur> {
         displayText: "Grænn"),
     LitirnirLeikurOption(
         name: "hvitur",
-        image: SvgPicture.asset("assets/litablanda/hvitur.svg"),
+        image: SvgPicture.asset("assets/litablanda/hviturbland.svg"),
         displayText: "Gulur"),
     LitirnirLeikurOption(
         name: "svartur",
@@ -47,27 +47,27 @@ class _LitirnirLeikurState extends State<LitirnirLeikur> {
         image: SvgPicture.asset("assets/litablanda/emptybox.svg"),
         displayText: "Rauður"),
     LitirnirLeikurOption(
-        name: "graenn",
-        image: SvgPicture.asset("assets/litablanda/graennblanda.svg"),
+        name: "graennbland",
+        image: SvgPicture.asset("assets/litablanda/graennbland.svg"),
         displayText: "Grænn"),
     LitirnirLeikurOption(
-        name: "fjolublar",
-        image: SvgPicture.asset("assets/litablanda/fjolublarblanda.svg"),
+        name: "fjolublarbland",
+        image: SvgPicture.asset("assets/litablanda/fjolubarbland.svg"),
         displayText: "Allir Litir"),
     LitirnirLeikurOption(
         name: "appelsinugulur",
-        image: SvgPicture.asset("assets/litablanda/appelsinugulurblanda.svg"),
+        image: SvgPicture.asset("assets/litablanda/appelsinugulurbland.svg"),
         displayText: "Blár"),
     LitirnirLeikurOption(
-        name: "bleikur",
-        image: SvgPicture.asset("assets/litablanda/bleikurblanda.svg"),
+        name: "bleikurbland",
+        image: SvgPicture.asset("assets/litablanda/bleikurbland.svg"),
         displayText: "Allir Litir"),
     LitirnirLeikurOption(
-        name: "brunn",
-        image: SvgPicture.asset("assets/litablanda/brunnblanda.svg"),
+        name: "brunnbland",
+        image: SvgPicture.asset("assets/litablanda/brunnblandad.svg"),
         displayText: "Blár"),
   ];
-  String _currentLitir = "bleikur";
+  String _currentLitir = "bleikurbland";
   SvgPicture _currentLitirImage =
       SvgPicture.asset("assets/litablanda/bleikur.svg");
   final player = AudioPlayer();

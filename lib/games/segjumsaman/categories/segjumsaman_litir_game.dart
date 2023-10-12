@@ -22,33 +22,33 @@ class SegjumLitirOption {
 class _SegjumLitirState extends State<SegjumLitirGame> {
   List<SegjumLitirOption> segjumLitirOption = [
     SegjumLitirOption(
-        name: "allColors",
-        image: AssetImage("assets/segjumsaman/litir/allirlitir.jpg"),
-        displayText: "Allir Litir"),
-    SegjumLitirOption(
-        name: "blue",
-        image: AssetImage("assets/segjumsaman/litir/blar.jpg"),
-        displayText: "Blár"),
-    SegjumLitirOption(
-        name: "green",
-        image: AssetImage("assets/segjumsaman/litir/graenn.jpg"),
-        displayText: "Grænn"),
-    SegjumLitirOption(
-        name: "yellow",
+        name: "gulur",
         image: AssetImage("assets/segjumsaman/litir/gulur.jpg"),
         displayText: "Gulur"),
     SegjumLitirOption(
-        name: "red",
-        image: AssetImage("assets/segjumsaman/litir/gulur.jpg"),
+        name: "raudur",
+        image: AssetImage("assets/segjumsaman/litir/raudur.jpg"),
         displayText: "Rauður"),
     SegjumLitirOption(
-        name: "green",
+        name: "graenn",
         image: AssetImage("assets/segjumsaman/litir/graenn.jpg"),
         displayText: "Grænn"),
+    SegjumLitirOption(
+        name: "Blar",
+        image: AssetImage("assets/segjumsaman/litir/blar.jpg"),
+        displayText: "Blár"),
+    SegjumLitirOption(
+        name: "bleikur",
+        image: AssetImage("assets/segjumsaman/litir/bleikur.jpg"),
+        displayText: "Bleikur"),
+    SegjumLitirOption(
+        name: "hvitur",
+        image: AssetImage("assets/segjumsaman/litir/hvitur.jpg"),
+        displayText: "Hvítur"),
   ];
-  String _currentLitir = "allirlitir";
+  String _currentLitir = "gulur";
   AssetImage _currentLitirImage =
-      AssetImage("assets/segjumsaman/litir/allirlitir.jpg");
+      AssetImage("assets/segjumsaman/litir/gulur.jpg");
   final player = AudioPlayer();
   @override
   void initState() {

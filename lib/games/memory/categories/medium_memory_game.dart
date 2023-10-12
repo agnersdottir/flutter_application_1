@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:namer_app/components/set_background.dart';
 
 import '../../../utils/game_logics_medium.dart';
-import 'info_card_medium.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);

@@ -91,7 +91,7 @@ class SegjumSamanGame extends StatelessWidget {
                   padding: const EdgeInsets.all(8),
                   //color: Colors.green[100],
                   child: SvgPicture.asset(
-                    "assets/farataeki2svg.svg",
+                    "assets/farataeki.svg",
                     // height: 400,
                   ),
                 ),

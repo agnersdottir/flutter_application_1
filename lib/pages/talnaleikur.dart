@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:namer_app/components/set_background.dart';
+import 'package:namer_app/games/draganddrop/draganddropCategories.dart';
 import 'package:namer_app/games/rutina/rutina_game.dart';
 import 'package:namer_app/games/segjumsaman/segjumsaman_game.dart';
 
-import '../games/draganddrop/drag_drop_form_game.dart';
-import '../games/memoryForm/categories_form_memory.dart';
-import '../games/memoryForm/memory_form_game.dart';
 import '../talnaleikir_games/form/form/form_game.dart';
 import '../talnaleikir_games/form/litirnir/litirnir..dart';
 import '../talnaleikir_games/form/tolur/segjumsamantolur_game.dart';
@@ -114,7 +112,7 @@ class Talnaleikur extends StatelessWidget {
                 onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => DraggableWidget()),
+                    MaterialPageRoute(builder: (context) => DragAndDRopGame()),
                   );
                 },
                 child: Container(

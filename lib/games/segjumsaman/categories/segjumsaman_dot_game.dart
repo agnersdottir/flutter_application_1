@@ -22,11 +22,11 @@ class SegjumDotOption {
 class _SegjumDotState extends State<SegjumDotGame> {
   List<SegjumDotOption> segjumDotOption = [
     SegjumDotOption(
-        name: "budarkassi",
+        name: "budakassi",
         image: AssetImage("assets/segjumsaman/dot/budarkassi.jpeg"),
         displayText: "Allir Litir"),
     SegjumDotOption(
-        name: "dukkukerra",
+        name: "Dukkukerra",
         image: AssetImage("assets/segjumsaman/dot/dukkukerra.jpeg"),
         displayText: "Blár"),
     SegjumDotOption(
@@ -38,7 +38,7 @@ class _SegjumDotState extends State<SegjumDotGame> {
         image: AssetImage("assets/segjumsaman/dot/seglar.jpeg"),
         displayText: "Gulur"),
     SegjumDotOption(
-        name: "risaedlur",
+        name: "risaedl",
         image: AssetImage("assets/segjumsaman/dot/risaeðlur.jpg"),
         displayText: "Rauður"),
     SegjumDotOption(

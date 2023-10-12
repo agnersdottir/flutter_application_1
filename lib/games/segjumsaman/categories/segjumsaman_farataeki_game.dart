@@ -23,28 +23,28 @@ class _SegjumFarataekiState extends State<SegjumFarataekiGame> {
   List<SegjumFarataekiOption> segjumFarataekiOption = [
     SegjumFarataekiOption(
         name: "bill",
-        image: AssetImage("assets/segjumsaman/farataeki/bill.jpeg"),
-        displayText: "Allir Litir"),
+        image: AssetImage("assets/segjumsaman/farataeki/bill.jpg"),
+        displayText: "Bíll"),
     SegjumFarataekiOption(
         name: "flugvel",
-        image: AssetImage("assets/segjumsaman/farataeki/flugvel.png"),
-        displayText: "Blár"),
+        image: AssetImage("assets/segjumsaman/farataeki/flugvel.jpg"),
+        displayText: "Flugvél"),
     SegjumFarataekiOption(
         name: "lest",
-        image: AssetImage("assets/segjumsaman/farataeki/lest.jpeg"),
-        displayText: "Grænn"),
+        image: AssetImage("assets/segjumsaman/farataeki/lest.jpg"),
+        displayText: "Lest"),
     SegjumFarataekiOption(
         name: "hjol",
         image: AssetImage("assets/segjumsaman/farataeki/hjol.jpg"),
-        displayText: "Gulur"),
+        displayText: "Hjól"),
     SegjumFarataekiOption(
         name: "skemmtiferdaskip",
         image: AssetImage("assets/segjumsaman/farataeki/skip.jpg"),
-        displayText: "Rauður"),
+        displayText: "Skemmtiferðarskip"),
     SegjumFarataekiOption(
         name: "traktor",
-        image: AssetImage("assets/segjumsaman/farataeki/traktor.jpeg"),
-        displayText: "Grænn"),
+        image: AssetImage("assets/segjumsaman/farataeki/traktor.jpg"),
+        displayText: "Traktor"),
   ];
   String _currentFarataeki = "traktor";
   AssetImage _currentFarataekiImage =

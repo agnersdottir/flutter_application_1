@@ -38,7 +38,7 @@ class _SegjumGaeludyrState extends State<SegjumGaeludyrGame> {
         image: AssetImage("assets/segjumsaman/gaeludyr/kottur.jpg"),
         displayText: "Gulur"),
     SegjumGaeludyrOption(
-        name: "pafagaukur",
+        name: "idapafagaukur",
         image: AssetImage("assets/segjumsaman/gaeludyr/pafagaukur.jpg"),
         displayText: "Rauður"),
     SegjumGaeludyrOption(
