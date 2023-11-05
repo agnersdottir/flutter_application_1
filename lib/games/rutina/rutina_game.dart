@@ -41,8 +41,7 @@ class RutinaGame extends StatelessWidget {
                 onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(
-                        builder: (context) => SegjumIslenskuDyrGame()),
+                    MaterialPageRoute(builder: (context) => SegjumDyrGame()),
                   );
                 },
                 child: Container(

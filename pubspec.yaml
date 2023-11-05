@@ -19,6 +19,9 @@ dependencies:
   video_player: ^2.7.0
   audioplayers: ^5.2.0
   flutter_svg_provider: ^1.0.4
+  svgator_player_flutter: ^2.0.0
+  webview_flutter: ^3.0.4
+  flutter_gif: ^0.0.4
 
 dev_dependencies:
   flutter_test:
@@ -32,12 +35,12 @@ flutter:
   assets:
   - assets/
   - assets/animals/
+  - assets/memory/
   - assets/animals/sounds/
   - assets/segjumsaman/
   - assets/segjumsaman/sounds/
   - assets/segjumsaman/litir/
   - assets/segjumsaman/islenskdyr/
-  - assets/segjumsaman/utivera/
   - assets/segjumsaman/farataeki/
   - assets/segjumsaman/avextir/
   - assets/segjumsaman/graenmeti/
@@ -50,3 +53,4 @@ flutter:
   - assets/pairs/
   - assets/litablanda/ 
   - assets/memoryForm/
+  - assets/background1.gif

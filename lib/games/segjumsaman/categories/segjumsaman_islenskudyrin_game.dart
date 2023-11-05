@@ -5,7 +5,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 
 import '../segjumsaman_game.dart';
 
-class SegjumIslenskuDyrGame extends StatefulWidget {
+class SegjumDyrGame extends StatefulWidget {
   @override
   _SegjumIslenskuDyrState createState() => _SegjumIslenskuDyrState();
 }
@@ -19,7 +19,7 @@ class SegjumIslenskuDyrOption {
       {required this.name, required this.image, required this.displayText});
 }
 
-class _SegjumIslenskuDyrState extends State<SegjumIslenskuDyrGame> {
+class _SegjumIslenskuDyrState extends State<SegjumDyrGame> {
   List<SegjumIslenskuDyrOption> segjumIslenskuDyrOption = [
     SegjumIslenskuDyrOption(
         name: "Hestur",

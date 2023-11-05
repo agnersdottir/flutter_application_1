@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:namer_app/components/set_background.dart';
+import 'package:namer_app/pages/einnspilaleikur.dart';
+import './background1.dart';
 
 import 'pages/spilaleikur.dart';
 import 'pages/talnaleikur.dart';
@@ -12,7 +13,7 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: SetBackground(child: MyHomePage()));
+    return MaterialApp(home: Stack(children: [Background1(), MyHomePage()]));
   }
 }
 
@@ -25,8 +26,42 @@ class _HomeState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     bool newSite = true;
+    // ignore: dead_code
     if (newSite) {
-      return Scaffold(body: BackButton());
+      return Scaffold(
+          backgroundColor: Colors.transparent,
+          body: CustomScrollView(
+            primary: true,
+            slivers: <Widget>[
+              SliverPadding(
+                padding: const EdgeInsets.all(20),
+                sliver: SliverGrid.count(
+                  crossAxisSpacing: 0,
+                  mainAxisSpacing: 10,
+                  crossAxisCount: 1,
+                  children: <Widget>[
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => EinnSpilaleikur()),
+                        );
+                      },
+                      child: Container(
+                        padding: const EdgeInsets.fromLTRB(200, 250, 200, 150),
+                        //color: Colors.green[100],
+                        child: SvgPicture.asset(
+                          "assets/spilaleiki.ai-01.svg",
+                          // height: 400,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ));
     } else {
       return Scaffold(
           backgroundColor: Colors.transparent,

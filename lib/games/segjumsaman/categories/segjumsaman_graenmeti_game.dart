@@ -2,6 +2,7 @@ import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'package:namer_app/components/set_background.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:namer_app/games/segjumsaman/categories/segjumsaman_avextir_game.dart';
 
 import '../segjumsaman_game.dart';
 
@@ -23,32 +24,57 @@ class _SegjumGraenmetiState extends State<SegjumGraenmetiGame> {
   List<SegjumGraenmetiOption> segjumGraenmetiOption = [
     SegjumGraenmetiOption(
         name: "agurka",
-        image: AssetImage("assets/segjumsaman/graenmeti/agurka.jpeg"),
-        displayText: "Allir Litir"),
+        image: AssetImage("assets/segjumsaman/graenmeti/agurka.jpg"),
+        displayText: "Agúrka"),
     SegjumGraenmetiOption(
-        name: "blomkal",
-        image: AssetImage("assets/segjumsaman/graenmeti/blomkal.jpeg"),
-        displayText: "Blár"),
+        name: "epli",
+        image: AssetImage("assets/segjumsaman/avextir/epli.jpg"),
+        displayText: "Epli"),
+    //SegjumGraenmetiOption(
+    //  name: "blomkal",
+    //image: AssetImage("assets/segjumsaman/graenmeti/blomkal.jpeg"),
+    //displayText: "Blár"),
     SegjumGraenmetiOption(
-        name: "broccoli",
-        image: AssetImage("assets/segjumsaman/graenmeti/broccoli.jpg"),
-        displayText: "Grænn"),
+        name: "Appelsina",
+        image: AssetImage("assets/segjumsaman/avextir/appelsina.jpg"),
+        displayText: "Appelsina"),
     SegjumGraenmetiOption(
-        name: "gulraetur",
-        image: AssetImage("assets/segjumsaman/graenmeti/gulraetur.jpg"),
-        displayText: "Gulur"),
+        name: "banani",
+        image: AssetImage("assets/segjumsaman/avextir/banani.jpg"),
+        displayText: "Banani"),
+    //SegjumGraenmetiOption(
+    //  name: "broccoli",
+    //image: AssetImage("assets/segjumsaman/graenmeti/broccoli.jpg"),
+    //    displayText: "Grænn"),
     SegjumGraenmetiOption(
-        name: "paprika",
-        image: AssetImage("assets/segjumsaman/graenmeti/paprika.jpeg"),
-        displayText: "Rauður"),
+        name: "kiwi",
+        image: AssetImage("assets/segjumsaman/avextir/kiwi.jpg"),
+        displayText: "Kíví"),
+    //SegjumGraenmetiOption(
+    //  name: "raudvinber",
+    //image: AssetImage("assets/segjumsaman/avextir/vinber.jpg"),
+    //displayText: "Vínber"),
+    ///SegjumGraenmetiOption(
+    // name: "gulraetur",
+    //      image: AssetImage("assets/segjumsaman/graenmeti/gulraetur.jpg"),
+    // displayText: "Gulur"),
+    //  SegjumGraenmetiOption(
+    //    name: "paprika",
+    //  image: AssetImage("assets/segjumsaman/graenmeti/paprika.jpeg"),
+    //displayText: "Rauður"),
     SegjumGraenmetiOption(
         name: "tomatur",
-        image: AssetImage("assets/segjumsaman/graenmeti/tomatoes.jpeg"),
-        displayText: "Grænn"),
+        image: AssetImage("assets/segjumsaman/graenmeti/tomatur.jpg"),
+        displayText: "Tómatur"),
+
+    SegjumGraenmetiOption(
+        name: "jardaber",
+        image: AssetImage("assets/segjumsaman/avextir/jardaber.jpg"),
+        displayText: "Jarðaber"),
   ];
   String _currentGraenmeti = "tomatur";
   AssetImage _currentGraenmetiImage =
-      AssetImage("assets/segjumsaman/graenmeti/tomatoes.jpeg");
+      AssetImage("assets/segjumsaman/graenmeti/tomatur.jpg");
   final player = AudioPlayer();
   @override
   void initState() {

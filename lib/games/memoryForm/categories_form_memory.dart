@@ -44,7 +44,7 @@ class MemoryFormGameCategories extends StatelessWidget {
                     context,
                     MaterialPageRoute(
                         //talna memory leikur
-                        builder: (context) => SegjumIslenskuDyrGame()),
+                        builder: (context) => SegjumDyrGame()),
                   );
                 },
                 child: Container(
@@ -62,7 +62,7 @@ class MemoryFormGameCategories extends StatelessWidget {
                     context,
                     MaterialPageRoute(
                         //talna memory leikur
-                        builder: (context) => SegjumIslenskuDyrGame()),
+                        builder: (context) => SegjumDyrGame()),
                   );
                 },
                 child: Container(

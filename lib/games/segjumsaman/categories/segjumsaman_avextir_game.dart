@@ -19,9 +19,9 @@ class SegjumAvextirOption {
 class _SegjumAvextirState extends State<SegjumAvextirGame> {
   List<SegjumAvextirOption> segjumLitirOption = [
     SegjumAvextirOption(
-        name: "Avacado",
-        image: AssetImage("assets/segjumsaman/avextir/avacado.jpg"),
-        displayText: "Allir Litir"),
+        name: "Appelsina",
+        image: AssetImage("assets/segjumsaman/avextir/appelsina.jpg"),
+        displayText: "Appelsina"),
     SegjumAvextirOption(
         name: "banani",
         image: AssetImage("assets/segjumsaman/avextir/banani.jpg"),
@@ -35,13 +35,13 @@ class _SegjumAvextirState extends State<SegjumAvextirGame> {
         image: AssetImage("assets/segjumsaman/avextir/jardaber.jpg"),
         displayText: "Gulur"),
     SegjumAvextirOption(
-        name: "vatnsmelona",
-        image: AssetImage("assets/segjumsaman/avextir/melona.jpg"),
-        displayText: "Rauður"),
+        name: "kiwi",
+        image: AssetImage("assets/segjumsaman/avextir/kiwi.jpg"),
+        displayText: "Kíví"),
     SegjumAvextirOption(
         name: "raudvinber",
         image: AssetImage("assets/segjumsaman/avextir/vinber.jpg"),
-        displayText: "Grænn"),
+        displayText: "Vínber"),
   ];
   String _currentAvextir = "raudvinber";
   AssetImage _currentAvextirImage =
