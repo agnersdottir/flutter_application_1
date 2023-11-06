@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:namer_app/utils/game_logics_hard.dart';
-
 import '../../../../../components/set_background.dart';
+import '../utils/game_logics_hard_dyr.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -26,11 +25,13 @@ class _HardMemoryGameDyrinState extends State<HardMemoryGameDyrin> {
   //setting text style
   TextStyle whiteText = TextStyle(color: Colors.black);
   bool hideTest = true;
-  GameHard _game = GameHard();
+  GameHardDyr _game = GameHardDyr();
 
   //game stats
   int tries = 0;
   int score = 0;
+  int lastIndex = -1;
+  bool ignoreTap = false;
 
   @override
   void initState() {
@@ -67,7 +68,27 @@ class _HardMemoryGameDyrinState extends State<HardMemoryGameDyrin> {
                     itemBuilder: (context, index) {
                       return GestureDetector(
                         onTap: () {
-                          print(_game.matchCheck);
+                          print(ignoreTap);
+                          if (ignoreTap) {
+                            return;
+                          }
+                          setState(() => ignoreTap = true);
+                          Future.delayed(
+                            Duration(milliseconds: 100),
+                            () {
+                              setState(() => ignoreTap = false);
+                            },
+                          );
+                          if (index == lastIndex) {
+                            setState(() {
+                              _game.gameImg![_game.matchCheck[0].keys.first] =
+                                  _game.hiddenCardpath;
+                              _game.matchCheck.clear();
+                            });
+                            lastIndex = -1;
+                            return;
+                          }
+                          lastIndex = index;
                           setState(() {
                             //incrementing the clicks
                             tries++;
@@ -77,6 +98,7 @@ class _HardMemoryGameDyrinState extends State<HardMemoryGameDyrin> {
                             print(_game.matchCheck.first);
                           });
                           if (_game.matchCheck.length == 2) {
+                            lastIndex = -1;
                             if (_game.matchCheck[0].values.first ==
                                 _game.matchCheck[1].values.first) {
                               print("true");

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:namer_app/categories/dyrin/dyrinMemory/memory/utils/game_logics_medium_dyr.dart';
 
 import '../../../../../components/set_background.dart';
 import '../../../../avextirOgGraenmeti/utils/game_logics_medium_avextir.dart';
@@ -26,7 +27,7 @@ class _MediumMemoryGameDyrinState extends State<MediumMemoryGameDyrin> {
   //setting text style
   TextStyle whiteText = TextStyle(color: Colors.black);
   bool hideTest = true;
-  GameMedium _game = GameMedium();
+  GameMediumDyr _game = GameMediumDyr();
 
   //game stats
   int tries = 0;

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class GameHardAvextir {
+class GameHardDyr {
   final Color hiddenCard = Colors.red;
   List<Color>? gameColors;
   List<String>? gameImg;
@@ -15,18 +15,22 @@ class GameHardAvextir {
   final String hiddenCardpath = "assets/memory/memorygamehard.png";
   // ignore: non_constant_identifier_names
   List<String> cards_list = [
-    "assets/segjumsaman/islenskdyr/lundi.jpg",
-    "assets/segjumsaman/islenskdyr/hakarl.jpg",
-    "assets/segjumsaman/islenskdyr/hundur2.jpg",
-    "assets/segjumsaman/islenskdyr/ugla.jpg",
-    "assets/segjumsaman/islenskdyr/selur.jpg",
-    "assets/segjumsaman/islenskdyr/hakarl.jpg",
+    "assets/segjumsaman/islenskdyr/hahyrningur1.jpg",
+    "assets/segjumsaman/islenskdyr/fulg.jpg",
     "assets/segjumsaman/islenskdyr/kyr.jpg",
-    "assets/segjumsaman/islenskdyr/ugla.jpg",
-    "assets/segjumsaman/islenskdyr/hundur2.jpg",
+    "assets/segjumsaman/islenskdyr/isbjorn.jpg",
+    "assets/segjumsaman/islenskdyr/api.jpg",
+    "assets/segjumsaman/islenskdyr/fulg.jpg",
+    "assets/segjumsaman/islenskdyr/ljon.jpg",
+    "assets/segjumsaman/islenskdyr/kottur.jpg",
+    "assets/segjumsaman/islenskdyr/hahyrningur1.jpg",
+    "assets/segjumsaman/islenskdyr/pig.jpg",
     "assets/segjumsaman/islenskdyr/kyr.jpg",
-    "assets/segjumsaman/islenskdyr/lundi.jpg",
-    "assets/segjumsaman/islenskdyr/selur.jpg",
+    "assets/segjumsaman/islenskdyr/pig.jpg",
+    "assets/segjumsaman/islenskdyr/api.jpg",
+    "assets/segjumsaman/islenskdyr/isbjorn.jpg",
+    "assets/segjumsaman/islenskdyr/ljon.jpg",
+    "assets/segjumsaman/islenskdyr/kottur.jpg",
   ];
 
   final int cardCount = 16;

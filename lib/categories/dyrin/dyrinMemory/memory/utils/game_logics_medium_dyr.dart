@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class GameMedium {
+class GameMediumDyr {
   final Color hiddenCard = Colors.red;
   List<Color>? gameColors;
   List<String>? gameImg;

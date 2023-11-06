@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:namer_app/categories/dyrin/dyrinMemory/memory/utils/game_logics_dyr.dart';
 
 import '../../../../../components/set_background.dart';
 import '../../../../avextirOgGraenmeti/utils/game_logics_avextir.dart';
@@ -26,7 +27,7 @@ class _EasyMemoryGameDyrinState extends State<EasyMemoryGameDyrin> {
   //setting text style
   TextStyle whiteText = TextStyle(color: Colors.black);
   bool hideTest = true;
-  Game _game = Game();
+  GameEasyDyr _game = GameEasyDyr();
 
   //game stats
   int tries = 0;

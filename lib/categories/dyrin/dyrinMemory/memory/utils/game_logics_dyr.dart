@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class Game {
+class GameEasyDyr {
   final Color hiddenCard = Colors.red;
   List<Color>? gameColors;
   List<String>? gameImg;
@@ -17,9 +17,9 @@ class Game {
   List<String> cards_list = [
     "assets/segjumsaman/islenskdyr/api.jpg",
     "assets/segjumsaman/islenskdyr/hakarl.jpg",
-    "assets/segjumsaman/islenskdyr/hundur2.jpg",
+    "assets/segjumsaman/islenskdyr/hahyrningur.jpg",
     "assets/segjumsaman/islenskdyr/api.jpg",
-    "assets/segjumsaman/islenskdyr/hundur2.jpg",
+    "assets/segjumsaman/islenskdyr/hahyrningur.jpg",
     "assets/segjumsaman/islenskdyr/hakarl.jpg",
   ];
   final int cardCount = 6;
